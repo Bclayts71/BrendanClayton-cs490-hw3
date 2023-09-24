@@ -1,5 +1,5 @@
 import { Link, routes } from '@redwoodjs/router'
-
+import { Toaster } from '@redwoodjs/web/toast'
 import { useAuth } from 'src/auth'
 
 const BlogLayout = ({ children }) => {
@@ -7,6 +7,7 @@ const BlogLayout = ({ children }) => {
 
   return (
     <>
+      <Toaster />
       <header className="relative flex justify-between items-center py-4 px-8 bg-blue-700 text-white">
         <h1 className="text-5xl font-semibold tracking-tight">
           <Link
